@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Hello !</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>David Beltrán</h1>
+            <h2>Jr Full Stack Developer | Creative Writer</h2>
+            <div class="redes">
+                <a href="https://github.com/1010David" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/david-beltr%C3%A1n-java/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About</h2>
+            <p>
+                <span>Hello, I'm David Beltrán.</span>
+                As a software developer specialized in backend, I have worked with Java, Spring Boot, and Maven, as well
+                as having experience in both SQL and MySQL databases, as well as NoSQL with MongoDB. I have also created
+                RESTful APIs and implemented security in web applications and microservices.
+            </p>
+            <p>
+                I have skills in using version control tools like Git and in project management with Jira,
+                along with the Scrum agile methodology. Additionally, I have knowledge in frontend development using
+                HTML,
+                CSS, Bootstrap, and JavaScript, which allows me to create attractive and responsive user interfaces.
+            </p>
+            <p>
+                I also have basic programming skills in Python and Flask, which enables me to expand my focus on other
+                projects and applications.
+            </p>
+            <p>
+                As a creative writer, I can effectively communicate technical details and complex solutions to
+                non-technical audiences.
+                I am committed to developing efficient and scalable solutions, with written words being the primary
+                eloquent communication
+                strategy on the web, and I always seek new opportunities to learn and improve my skills.
+            </p>
+
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>My data</h3>
+                    <ul>
+
+                        <li>
+                            <strong>Telephon</strong>
+                            +57 3188196781
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            j.david.beltran.m@gmail.com
+                        </li>
+
+                        <li>
+                            <strong>City</strong>
+                            Bogotá Colombía
+                        </li>
+                        <li>
+                            <strong>Now</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>DEV</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen"></i>
+                            <span>WRITE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>READ</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                            <span>CUCINARE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a class="fa-solid fa-download" target="_blank" href="currilulum\curriculum_mine.pdf">
+                    Download CV
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SpringBoot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>English</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Web Development Technician</h4>
+                        <span class="casa">Universidad Autonoma Bucaramanga</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>
+                            Ministry of Tecnology from Colombia Full Stack Programming Learning Path.
+                            Backend | Python | Java | Spring-Boot | Maven | MVC 
+                            Fronend | HTML | CSS | Bootstrap 
+                            Agile Scrum methodology | Jira | GitHub 
+                            
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Web application development</h4>
+                        <span class="casa">Universidad Autonoma Bucaramanga</span>
+                        <span class="fecha">2022</span>
+                        <p>
+                            This course is designed for individuals who want to learn how to build robust web
+                            applications using the Spring Boot framework, Maven, and MVC architecture.
+
+                            The course starts with an overview of web application development and covers the
+                            fundamentals of Spring Boot and MVC architecture. Students will learn how to use Maven to
+                            manage dependencies and build applications efficiently.
+
+                            As the course progresses, students will learn how to develop RESTful web services and use
+                            Spring Data to interact with databases. The course will also cover topics such as security,
+                            testing, and deployment.
+
+                            Throughout the course, students will work on several hands-on projects to apply the concepts
+                            they have learned. The projects will range from building simple web applications to more
+                            complex, multi-tier applications.
+
+                            The course will also include quizzes and exams to assess students' understanding of the
+                            material. By the end of the course, students will have a strong understanding of Spring
+                            Boot, Maven, and MVC architecture, and be able to develop scalable and maintainable web
+                            applications. They will have a solid foundation for more advanced courses in web development
+                            or specialized areas such as microservices or cloud computing.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Basic programming with Java</h4>
+                        <span class="casa">Universidad Sergio Arboleda</span>
+                        <span class="fecha">2022</span>
+                        <p>
+                            This course is designed to introduce students to the fundamentals of programming using Java.
+                            It covers the basic concepts of programming, such as variables, data types, control
+                            structures, functions, and arrays.
+
+                            Throughout the course, students will work on various coding assignments and projects to
+                            apply the concepts they have learned. The course will also cover object-oriented programming
+                            (OOP) principles, such as classes, objects, inheritance, and polymorphism.
+
+                            By the end of the course, students will have a solid understanding of the fundamentals of
+                            programming in Java. They will be able to write basic Java code and have a foundation for
+                            more advanced Java programming courses or specialization areas such as Android app
+                            development or software engineering.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <h4>Introduction to Programming with Python</h4>
+                        <span class="casa">Universidad Sergio Arboleda</span>
+                        <span class="fecha">2022</span>
+                        <p>
+                            This course is designed for individuals who have no prior programming experience
+                            and want to learn the fundamentals of Python programming language. The course starts with an
+                            introduction to programming concepts and basic data structures in Python.
+                            As the course progresses, students will learn more advanced programming concepts such as
+                            control structures, functions, and object-oriented programming. The course will also cover
+                            data analysis and manipulation using Python libraries like Pandas and Numpy.
+                            Throughout the course, students will work on various coding assignments and projects to
+                            apply the concepts they have learned. The course will also include quizzes and exams to
+                            assess students' understanding of the material.
+                            By the end of the course, students will have a solid understanding of Python programming
+                            language and its applications. They will be able to write basic to intermediate-level Python
+                            code and have a foundation for more advanced Python programming courses or specialization
+                            areas such as data science or web development
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Introduction to Web Development I and II</h4>
+                        <span class="casa">Google Activate</span>
+                        <span class="fecha">2023</span>
+                        <p>
+                            This course is designed to introduce students to the basics of web development. It covers
+                            the fundamental concepts of HTML, CSS, and JavaScript, which are the building blocks of the
+                            web.
+
+                            Throughout the course, students will learn how to create basic web pages using HTML and
+                            style them with CSS. They will also learn how to add interactivity to web pages using
+                            JavaScript.
+
+                            The course is self-paced, and students will have access to video tutorials, quizzes, and
+                            interactive exercises. By the end of the course, students will have a basic understanding of
+                            web development and be able to create simple web pages. They will have a foundation for more
+                            advanced courses in web development or specialization areas such as front-end or back-end
+                            development. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Freelancer</h4>
+                        <span class="casa">Freelancer.com | Fiverr.com</span>
+                        <span class="fecha">2023</span>
+                        <p>
+                            Freelancer.com and Fiverr are online marketplaces where freelancers can offer their services
+                            to clients from all over the world. If you're just starting, it's important to create a
+                            strong profile that showcases your skills, experience, and expertise.
+
+                            Make sure to include a clear and concise description of the services you offer and the type
+                            of clients you want to work with. It's also important to set competitive rates and be
+                            responsive to client inquiries.
+
+                            To increase your chances of getting hired, focus on building a strong portfolio that
+                            showcases your best work. You can also take advantage of the skills tests and certifications
+                            offered on the platforms to demonstrate your proficiency in your field.
+
+                            Networking is also essential as a freelancer. Take advantage of the community features on
+                            Freelancer.com and Fiverr to connect with other freelancers and potential clients. And most
+                            importantly, always provide high-quality work and excellent customer service to build a
+                            positive reputation and get repeat business.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/1010david/sitio_web_apisena" target="_blank">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Web Site Beekeeping Company</h3>
+                        <p>HTML | CSS | JS</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/1010david/SitioWebPythonFlask" target="_blank">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Web Site | Download Books</h3>
+                        <p>Python | Flask</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/1010david" target="_blank">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>My portfolio</h3>
+                        <p>HTML | CSS | JS</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/1010david/backend-gestion_empleados_app" target="_blank">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Backend Employee management</h3>
+                        <p>Java | SpringBoot</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/1010david/Spring_Boot_Aplication" target="_blank">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Crud | Endpoints</h3>
+                        <p>Java | SpringBoot</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/1010david/demoCrud" target="_blank">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Crud | Endpoints</h3>
+                        <p>Java | SpringBoot</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/j.david.beltran.m@gmail.com" method="POST">
+                      <input type="text" name="name" placeholder="Tú Nombre">
+                      <input type="text" name="phone" placeholder="Número telefónico" >
+                      <input type="text" name="email" placeholder="Dirección de correo" >
+                      <input type="text" name="subject" placeholder="Tema" >
+                      <textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                      <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                      </button>
+                    </form>
+                  </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogota  Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Phone+57 3017993366 | 3188196781
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                email: j.david.beltran.m@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/1010David"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/david-beltr%C3%A1n-java/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
